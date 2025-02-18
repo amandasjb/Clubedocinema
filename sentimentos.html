@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Sinto-Falta</title>
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.0/style/phosphor-icons.min.css">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="icone-inicio" viewBox="0 0 256 256">
+            <polygon points="128 160 176 216 80 216 128 160"/>
+            <path d="M56,192H48a16,16,0,0,1-16-16V64A16,16,0,0,1,48,48H208a16,16,0,0,1,16,16V176a16,16,0,0,1-16,16h-8"/>
+        </symbol>
+        <symbol id="icone-sentimentos" viewBox="0 0 256 256">
+            <line x1="128" y1="56" x2="128" y2="180"/>
+            <path d="M187.76,151.94c8.05.48,29.5-1.29,37.36-32.23C233.21,87.84,240.22,48,208.93,48S128,95.8,128,127.67C128,95.8,78.36,48,47.07,48S22.79,87.84,30.88,119.71c7.86,30.94,29.31,32.71,37.36,32.23"/>
+            <path d="M88,144a36.11,36.11,0,1,0,40,36,36,36,0,1,0,40-36"/>
+        </symbol>
+        <symbol id="icone-necessidades" viewBox="0 0 256 256">
+            <circle cx="164" cy="68" r="12"/>
+            <path d="M104,99.52V76.89c0-28.77,23-52.75,51.74-52.89a52,52,0,0,1,50.59,38.89L232,80,208,96v24a96,96,0,0,1-96,96H24a8,8,0,0,1-6.25-13Z"/>
+            <line x1="128" y1="128" x2="54.67" y2="216"/>
+        </symbol>
+    </svg>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">
+                    <svg aria-hidden="true"><use href="#icone-inicio"></use></svg>
+                    <span class="sr-only">Início</span>
+                </a></li>
+                <li><a href="sentimentos.html">
+                    <svg aria-hidden="true"><use href="#icone-sentimentos"></use></svg>
+                    <span class="sr-only">Sentimentos</span>
+                </a></li>
+                <li><a href="necessidades.html">
+                    <svg aria-hidden="true"><use href="#icone-necessidades"></use></svg>
+                    <span class="sr-only">Necessidades</span>
+                </a></li>
+            </ul>
+        </nav>
+        <p class="slogan">Jogo Terapêutico: Sinto Falta</p>
+    </header>
+
+    <main>
+        <div class="cards-container" id="cardsContainer"></div>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
